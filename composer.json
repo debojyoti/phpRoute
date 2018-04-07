@@ -1,0 +1,17 @@
+{
+    "name" : "Debojyoti/PhpRoute",
+    "description" : "",
+    "type" : "package",
+    "license" : "MIT",
+    "authors" : [
+        {
+            "name" : "Debojyoti",
+            "email" : "dsahapersonal@gmail.com"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "Debojyoti\\" : "src"
+        }
+    }
+}

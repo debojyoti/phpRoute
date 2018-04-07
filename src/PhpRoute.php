@@ -2,7 +2,7 @@
 
 namespace Debojyoti;
 
-class Route 
+class PhpRoute 
 {
     public function __construct() {
 

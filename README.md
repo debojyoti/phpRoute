@@ -20,6 +20,15 @@
 # Run 
 `composer update`
 
+# Add .htaccess file with the content
+
+```
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?path=$1 [NC,L,QSA]
+```
+
 # Usage
     
     require "path/to/autoload.php";

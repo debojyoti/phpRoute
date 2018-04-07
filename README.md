@@ -5,7 +5,7 @@
     "repositories": [
     {
         "type": "vcs",
-        "url": "https://github.com/Debojyoti/PhpRoute/.git",
+        "url": "https://github.com/Debojyoti/PhpRoute",
             "autoload": {
                 "psr-4" : {
                     "Debojyoti\\" : "src"

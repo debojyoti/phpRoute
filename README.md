@@ -1,6 +1,6 @@
-#How to use in your project
+# How to use in your project
 
-##Include in your composer.json
+## Include in your composer.json
 
     "repositories": [
     {
@@ -17,9 +17,9 @@
         "Debojyoti/PhpRoute": "dev-master"
     }
 
-#Run `composer update`
+# Run `composer update`
 
-#Usage
+# Usage
     
     require "path/to/autoload.php";
 

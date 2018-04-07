@@ -1,3 +1,9 @@
 <?php
-$parts = explode('/',ltrim($_SERVER['REQUEST_URI'],'/'));
-print_r($parts);
+
+require "src/Route.php";
+
+use Debojyoti\Route;
+
+$route = new Route();
+
+print_r($route->getParts());

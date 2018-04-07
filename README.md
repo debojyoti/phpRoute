@@ -17,7 +17,8 @@
         "Debojyoti/PhpRoute": "dev-master"
     }
 
-# Run ### `composer update`
+# Run 
+`composer update`
 
 # Usage
     

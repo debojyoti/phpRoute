@@ -20,6 +20,9 @@ class PhpRoute
         $arguments = ltrim($this->query_string,'/');
         $arguments = rtrim($arguments, '/');
         $parts = explode('/', $arguments);
+        if(count($parts) == 1 && $parts[0] == '') {
+            return [];
+        }
         return $parts;
     }
 }

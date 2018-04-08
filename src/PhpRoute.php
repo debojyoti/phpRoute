@@ -18,31 +18,8 @@ class PhpRoute
 
     public function getParts() {
         $arguments = ltrim($this->query_string,'/');
+        $arguments = rtrim($arguments, '/');
         $parts = explode('/', $arguments);
         return $parts;
-    }
-
-    public function redirectProper() {
-        #   Check if file exists in the given path
-        if(file_exists($this->file_path)) {
-            //  Check if the file is proper   
-            if ($this->isRealFile()) {
-                file_get_contents($this->file_path);
-                return true;
-            //  Check if a index.php file available in that path
-            } else if (file_exists($this->file_path.'index.php')) {
-                file_get_contents($this->file_path.'index.php');
-                return true;
-            }
-        } else {
-            return false;
-        }
-    }
-
-    private function isRealFile() {
-        $parts = (explode('.', $this->query_string));
-        if (count($parts)>1) {
-            return true;
-        }
     }
 }
